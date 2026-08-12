@@ -1,0 +1,56 @@
+.spotlight-card {
+  position: relative;
+  border-radius: 20px;
+  background: rgba(18, 15, 28, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, background 0.3s ease;
+  will-change: transform;
+}
+
+.spotlight-card:hover {
+  background: rgba(26, 20, 42, 0.85);
+  box-shadow: 0 20px 45px -15px rgba(74, 59, 119, 0.4), 0 0 30px rgba(123, 99, 191, 0.2);
+}
+
+.spotlight-card-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.spotlight-card-border {
+  position: absolute;
+  inset: -1px;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  border-radius: 20px;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  padding: 1.5px;
+}
+
+.spotlight-card-content {
+  position: relative;
+  z-index: 3;
+  padding: 32px;
+  height: 100%;
+}
+
+.spotlight-card:hover .feature-icon-wrapper {
+  transform: translateY(-2px) scale(1.08);
+  border-color: #a892ee;
+  box-shadow: 0 0 20px rgba(168, 146, 238, 0.4);
+  background: rgba(123, 99, 191, 0.4);
+  color: #ffffff;
+}
+
+.feature-icon-wrapper {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
