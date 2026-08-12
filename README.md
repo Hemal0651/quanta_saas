@@ -2,8 +2,6 @@
 
 <img src="public/logy.png" alt="Quanta Logo" width="500" />
 
-# Quanta
-
 ### A modern, high-performance, interactive SaaS landing page
 
 Built with React 18, Vite, OGL (WebGL), Motion, and custom Canvas animations.
