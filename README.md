@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="public/logy.png" alt="Quanta Logo" width="400" />
+<img src="public/logy.png" alt="Quanta Logo" width="500" />
 
 # Quanta
 
